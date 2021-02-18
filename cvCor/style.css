@@ -1,0 +1,192 @@
+
+/* ------ VARIABLES ------ */
+:root {
+    --font : 'Open Sans', sans-serif;
+    --font-headings : 'Abel', sans-serif;
+    --dark : rgb(37, 37, 37);
+    --light : lightgrey;
+    --blue : #7e98a7;
+    --darkblue : #5e7481;
+}
+
+/* Import des feuilles de styles */
+/* @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'); */
+
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Open+Sans:ital,wght@0,300;1,300&display=swap');
+
+@import "css/text-format.css";
+@import "css/btn.css";
+@import "css/bg-color.css";
+@import "css/bloc.css";
+
+/* ---------- BACKGROUND COLORS ---------- */
+.bg-light {
+    background: rgb(233, 233, 233);
+    color :  var(--dark);
+}
+
+.bg-dark {
+    background: var(--dark);
+    color: var(--light);
+}
+
+
+/* ------ TEXT FORMAT ------ */
+html, body {
+    font-family: var(--font);
+    font-size:16px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-headings);
+}
+
+a {
+    color: var(--blue);
+    text-decoration: none;
+}
+
+.bg-dark a:hover {
+    color: var(--light);
+}
+
+.bg-light a:hover {
+    color: var(--dark);
+}
+
+.display-1 {
+    font-size: 3rem;
+}
+.display-2 {
+    font-size: 2.4rem;
+}
+
+/* ------ BUTTONS ------ */
+.btn {
+    display: inline-block;
+    padding: .8rem 1.1rem;
+    border-radius: .4rem;
+    transition: background-color .15s ease-in-out;
+}
+
+.btn.blue{
+    background: var(--blue);
+    color:var(--light);
+}
+
+.btn.blue:hover {
+    color:var(--light);
+    background: var(--darkblue);
+}
+
+/* ------ BLOCS ------ */
+
+/* -- HEADER -- */
+header {
+    background-image: url(./img/bg-header.jpg);
+    background-size: cover;
+    padding-top: 5rem;
+    padding-bottom: 1rem;
+}
+
+/* logo */
+header #logo img {
+    border: 1px solid var(--light);
+    padding: 3px;
+    background: var(--dark);
+}
+
+/* navbar */
+header nav {
+    display: inline-block;
+    background: var(--light);
+    color:var(--dark);
+    border-radius: 3px;
+}
+
+header nav ul {
+    padding: .3rem 3rem;
+}
+
+header nav ul a {
+    color: inherit;
+}
+
+header nav ul a:hover {
+    color: var(--darkblue)!important;
+}
+
+header nav ul a li {
+    display: inline-block;
+}
+
+/* -- SECTION GENERALITES -- */
+section {
+    padding: 2rem 3rem 7rem 3rem!important;
+    margin: 0;
+}
+
+section > h1 {
+    margin-bottom: 0.8rem;
+}
+
+section > hr {
+    margin-bottom: 3rem;
+}
+
+/* -- SECTION WELCOME -- */
+section#welcome {
+}
+
+/* -- SECTION COMPETENCES -- */
+section#competence > div {
+    padding: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+section#competence > div img{
+    float: left;
+    margin-right: .6rem;
+}
+
+section#competence > div div{
+    text-align: left;
+}
+section#competence > div div h2{
+    margin-top: 0;;
+}
+
+/* -- SECTION REFERENCE -- */
+section#ref #container > div {
+    display: inline-block;
+    max-width: 300px;
+}
+
+section#ref #container > div {
+    display: inline-block;
+    max-width: 300px;
+    margin-right: 3rem;
+}
+
+section#ref #container > div:last-child {
+    margin-right: 0;
+}
+
+section#ref #container > div > div figure {
+    margin: 0;
+}
+
+section#ref #container > div > div p {
+    font-style: italic;
+}
+
+/* -- FOOTER -- */
+footer {
+    font-size: .8rem;
+    height: 3rem;
+    line-height: 3rem;
+}

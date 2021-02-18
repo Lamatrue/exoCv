@@ -1,7 +1,66 @@
 /* Import des feuilles de styles */
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
 
+@import url("./css/reset.css");
 @import url("css/text-format.css");
 @import url("css/btn.css");
 @import url("css/bg-color.css");
 @import url("css/bloc.css");
+
+body {
+    text-align: center;
+}
+/*********** HEADER ************/
+#logo img {
+    border: ridge rgb(37, 37, 37);
+    margin-top: 40px;
+    top: auto;
+}
+header {
+    background-image: url(../exoCv/img/bg-header.jpg);
+    background-size: cover;
+    height: 450px;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+header h1 {
+    color: lightgrey;
+    font-family: 'Abel', sans-serif;
+    font-size: 2rem;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+ul, li {
+    display: inline;  
+}
+nav {
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    color: rgb(37, 37, 37);
+    font-family: 'Open Sans', sans-serif;
+    margin: 60px auto 20px auto;
+	padding: 15px; 
+    width: 400px;
+}
+/*********** WELCOME ************/
+.display-1 {
+    font-family: 'Abel', sans-serif;
+    font-size: 2.5rem;
+}
+#welcome {
+    background: rgb(255, 255, 255);
+    height: 350px;
+    padding: 15px;
+
+}
+/******* COMPETENCES *******/
+#competence {
+
+    height: 450px;
+    padding: 15px;
+
+/********* POLICES *********/
+font-family: 'Abel', sans-serif;
+font-family: 'Open Sans', sans-serif;
